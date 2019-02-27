@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.container {
+
+margin:0 auto;
+width: 804px;
+height: 804px;
+
+} 
+
+
+.cells { 
+
+position: relative;
+background: black;
+width: 808px;
+height: 808px;
+border: 4px solid red;   
+
+ }
+
+.cell { 
+ 	position: absolute;
+ 	height: 100px;
+ 	width: 100px;
+ 	background: white;
+  }
+
+ .line1 .cell.one { 
+  	top: 0;
+  	left: 100px;
+   }
+   .line1 .cell.two { 
+  	top: 0;
+  	left: 300px;
+   }
+   .line1 .cell.three { 
+  	top: 0;
+  	left: 500px;
+   }
+   .line1 .cell.four { 
+  	top: 0;
+  	left: 700px;
+   }
+
+.line2 .cell.one { 
+  	top: 100px;
+  	left: 0;
+   }
+      .line2 .cell.two { 
+  	top: 100px;
+  	left: 200px;
+   }
+     .line2 .cell.three { 
+  	top: 100px;
+  	left: 400px;
+   }
+   .line2 .cell.four { 
+  	top: 100px;
+  	left: 600px;
+   }
+
+   .line3 .cell.one { 
+  	top: 200px;
+  	left: 100px;
+   }
+   .line3 .cell.two { 
+  	top: 200px;
+  	left: 300px;
+   }
+   .line3 .cell.three { 
+  	top: 200px;
+  	left: 500px;
+   }
+   .line3 .cell.four { 
+  	top: 200px;
+  	left: 700px;
+   }
+
+.line4 .cell.one { 
+  	top: 300px;
+  	left: 0;
+   }
+      .line4 .cell.two { 
+  	top: 300px;
+  	left: 200px;
+   }
+     .line4 .cell.three { 
+  	top: 300px;
+  	left: 400px;
+   }
+   .line4 .cell.four { 
+  	top: 300px;
+  	left: 600px;
+   }
+
+    .line5 .cell.one { 
+  	top: 400px;
+  	left: 100px;
+   }
+   .line5 .cell.two { 
+  	top: 400px;
+  	left: 300px;
+   }
+   .line5 .cell.three { 
+  	top: 400px;
+  	left: 500px;
+   }
+   .line5 .cell.four { 
+  	top: 400px;
+  	left: 700px;
+   }
+
+.line6 .cell.one { 
+  	top: 500px;
+  	left: 0;
+   }
+      .line6 .cell.two { 
+  	top: 500px;
+  	left: 200px;
+   }
+     .line6 .cell.three { 
+  	top: 500px;
+  	left: 400px;
+   }
+   .line6 .cell.four { 
+  	top: 500px;
+  	left: 600px;
+   }
+
+      .line7 .cell.one { 
+  	top: 600px;
+  	left: 100px;
+   }
+   .line7 .cell.two { 
+  	top: 600px;
+  	left: 300px;
+   }
+   .line7 .cell.three { 
+  	top: 600px;
+  	left: 500px;
+   }
+   .line7 .cell.four { 
+  	top: 600px;
+  	left: 700px;
+   }
+
+   .line8 .cell.one { 
+  	top: 700px;
+  	left: 0;
+   }
+      .line8 .cell.two { 
+  	top: 700px;
+  	left: 200px;
+   }
+     .line8 .cell.three { 
+  	top: 700px;
+  	left: 400px;
+   }
+   .line8 .cell.four { 
+  	top: 700px;
+  	left: 600px;
+   }
+
+.black .cell::before {
+	content: '';
+	background-image: url('images/black.png');
+	background-size: cover;
+	position: absolute;
+	height: 100%;
+    width: 100%;
+	 }
+
+	 .white .cell::before {
+	content: '';
+	background-image: url('images/white.png');
+	background-size: cover;
+	position: absolute;
+	height: 100%;
+    width: 100%;
+
+	 }
+
+	.cell:hover::before { 
+	transform: scale(.9); }
