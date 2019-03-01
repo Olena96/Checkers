@@ -188,27 +188,51 @@ margin-bottom: 30px;
   	left: 600px;
    }
 
-.black .cell::before {
+.line1 .cell::before,
+.line3 .cell::before {
 	content: '';
 	background-image: url('../images/black.png');
 	background-size: cover;
 	position: absolute;
 	height: 100%;
     width: 100%;
+    right:100px;
 	 }
 
-	 .white .cell::before {
+.line2 .cell::before {
+  content: '';
+  background-image: url('../images/black.png');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+    width: 100%;
+    left:100px;
+   }
+
+	 .line6 .cell::before,
+   .line8 .cell::before {
 	content: '';
 	background-image: url('../images/white.png');
 	background-size: cover;
 	position: absolute;
 	height: 100%;
     width: 100%;
+    left:100px;
+
+} 
+
+.line7 .cell::before {
+  content: '';
+  background-image: url('../images/white.png');
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+    width: 100%;
+    right:100px;
+   }
 
 
-
-
-	 }
+	
 
 	.cell:hover::before { 
 	transform: scale(1.1);
